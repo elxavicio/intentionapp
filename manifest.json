@@ -5,15 +5,20 @@
   "version": "0.1",
 
   "description": "Find the intention before jumping on the abyss of social media",
+  "homepage_url": "https://github.com/elxavicio/intentionapp",
 
   "icons": {
     "48": "icons/icons8-target-48.png",
     "96": "icons/icons8-target-96.png"
   },
 
+  "permissions": [
+    "activeTab"
+  ],
+
   "content_scripts": [
     {
-      "matches": ["*://*.twitter.com/*"],
+      "matches": ["*://*.twitter.com/*", "*://*.facebook.com/*", "*://*.instagram.com/*"],
       "js": ["intention.js"]
     }
   ]
