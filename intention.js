@@ -1,0 +1,1 @@
+window.prompt(`Why are you accessing ${window.location.hostname}`,"I am bored");
